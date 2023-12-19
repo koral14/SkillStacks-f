@@ -23,7 +23,7 @@ function FlashCardForm({ deckId, deck, cards, setCards }) {
   async function handleSaveCard(e) {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/flashcard`, {
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/v1/flashcard`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function FlashCardForm({ deckId, deck, cards, setCards }) {
   async function handleDelete(id) {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/v1/flashcard/${id}`,
+        `${process.env.REACT_APP_API_BASE_URL}/api/v1/flashcard/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -77,7 +77,7 @@ function FlashCardForm({ deckId, deck, cards, setCards }) {
   async function handleUpdate(id, body) {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/v1/flashcard/${id}`,
+        `${process.env.REACT_APP_API_BASE_URL}/api/v1/flashcard/${id}`,
         {
           method: "PATCH",
           headers: {
