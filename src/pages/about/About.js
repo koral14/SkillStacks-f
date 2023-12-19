@@ -275,7 +275,7 @@ const About = () => {
             </ul>
             <a
                 className="button-swagger"
-                href="http://localhost:8000/api/v1/api-docs/"
+                href="http://skillstacks-bk.onrender.com/api/v1/api-docs/"
             >
                 Swagger documentation
             </a>

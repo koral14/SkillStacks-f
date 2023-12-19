@@ -29,7 +29,9 @@ function AuthProvider({ children }) {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/v1/user/logout", {
+      // REACT_APP_API_BASE_URL
+      // const response = await fetch("http://localhost:8000/api/v1/user/logout", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/v1/user/logout`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +55,7 @@ function AuthProvider({ children }) {
     const fetchDecks = async () => {
       try {
         // get public decks
-        const response = await fetch("http://localhost:8000/api/v1/decksAll", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/v1/decksAll`, {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
@@ -62,7 +64,7 @@ function AuthProvider({ children }) {
         //get private decks if logged in
         let privateUserDecks = [];
         if (isLoggedIn) {
-          const response = await fetch("http://localhost:8000/api/v1/deck", {
+          const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/v1/deck`, {
             method: "GET",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
@@ -88,7 +90,7 @@ function AuthProvider({ children }) {
     if (authInfo && now < authInfo.expiry) {
       const getUserData = async () => {
         try {
-          const response = await fetch(`http://localhost:8000/api/v1/user/${authInfo.userId}`, {
+          const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/v1/user/${authInfo.userId}`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
