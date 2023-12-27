@@ -403,7 +403,7 @@ const About = () => {
       </ul>
       <a
         className="button-swagger"
-        href="http://localhost:8000/api/v1/api-docs/"
+        href={`${process.env.REACT_APP_API_BASE_URL}/api/v1/api-docs/`}
       >
         Swagger documentation
       </a>
