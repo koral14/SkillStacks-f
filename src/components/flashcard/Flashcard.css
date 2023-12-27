@@ -58,7 +58,7 @@
 .skip-button {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between; /* Adjusted alignment for smaller screens */
+  justify-content: center; /* Adjusted alignment for smaller screens */
   align-items: center;
   width: 90%; /* Adjusted width for smaller screens */
   padding-bottom: 50px; /* Adjusted padding for smaller screens */
