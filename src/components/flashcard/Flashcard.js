@@ -67,7 +67,7 @@ const Flashcard = () => {
         flipSpeedBackToFront={0.5}
       >
         <div className="card-front" key="front" onClick={handleFlip}>
-          <p>{flashcards[cardIndex]?.question}</p>
+          <p className="paragraph-flashcard">{flashcards[cardIndex]?.question}</p>
           <div className="hint-section">
             <div className="hint-icon-container" onClick={(e) => handleHint(e)}>
               <Icon icon={ic_lightbulb} size={24} className="hint-icon" />

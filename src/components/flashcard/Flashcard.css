@@ -5,6 +5,7 @@
   align-items: center;
   margin-top: 83px;
   padding-top: 50px; /* Adjusted padding for smaller screens */
+  position: relative;
 }
 
 .card-front,
@@ -23,6 +24,7 @@
   align-items: center;
   text-align: center;
   background-color: var(--secondary-background);
+  position: relative;
 }
 
 .hint-section {
@@ -58,7 +60,7 @@
 .skip-button {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between; /* Adjusted alignment for smaller screens */
+  justify-content:center; /* Adjusted alignment for smaller screens */
   align-items: center;
   width: 90%; /* Adjusted width for smaller screens */
   padding-bottom: 50px; /* Adjusted padding for smaller screens */
@@ -76,6 +78,13 @@
     max-width: 400px;
     height: 250px;
     margin-left: 20px;
+    /* background-color: blue; */
+    padding: 5px;
+  }
+
+  .paragraph-flashcard {
+    /* background-color: red; */
+    padding-bottom: 70px;
   }
 
   .hint-text {
@@ -83,8 +92,13 @@
   }
 
   .hint-section {
-    position: absolute;
-    bottom: 55px;
+    /* position: absolute; */
+    bottom: 5px;
     left: 20px;
+  }
+
+
+  .skip-button {
+    padding-bottom: 0px; /* Adjusted padding for smaller screens */
   }
 }

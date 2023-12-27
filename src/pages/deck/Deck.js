@@ -81,7 +81,7 @@ function Deck() {
   };
 
   return (
-    <div>
+    <div className="deck-component">
       <Link to="/" className="navbar-button">
         <li>Home</li>
       </Link>

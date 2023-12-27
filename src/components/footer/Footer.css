@@ -3,7 +3,7 @@ a {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: #ef9364;
   left: 0;
@@ -73,6 +73,17 @@ a {
 
 @media (max-width: 600px) {
   .footer {
+    max-height: 50px;
+    
+  }
+  .repo-link {
     display: none;
+  }
+  .footer-copyright {
+    display: none;
+  }
+
+  .footer-links {
+    margin-top: -15px;
   }
 }
