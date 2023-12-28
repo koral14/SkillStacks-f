@@ -74,8 +74,7 @@ a {
 @media (max-width: 600px) {
   .footer {
     max-height: 50px;
-    background: var(--secondary-button-background);
-    
+    background: #064b6bd2;     
   }
   .repo-link {
     display: none;

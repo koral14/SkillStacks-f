@@ -1,8 +1,11 @@
+.content {
+  width: 100%;
+}
 .home-container {
   margin-top: 35px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .decks-container {
@@ -51,5 +54,9 @@
 @media (max-width: 750px) {
   .decks-container {
     justify-content: center;
+  }
+
+  .home-container {
+    padding-bottom: 80px;
   }
 }
