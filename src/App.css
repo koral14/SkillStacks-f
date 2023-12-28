@@ -10,21 +10,22 @@ a {
 
 body {
   width: 100%;
-  /* height: 100vh; */
+  /*height: 100vh;*/
   margin: 0;
 }
 
 #root {
   /* position: relative; */
   width: 100%;
+  /* height: 100vh; */
   /* global font and background color */
   font-family: Inter, sans-serif;
   color: #ededed;
   --bar-width: 60px;
   --bar-height: 6px;
   --hamburger-gap: 6px;
-  --foreground: #7938b2;
-  --background: #bf7af0;
+  --foreground: #064b6b;
+  --background: #052926;
   --hamburger-margin: 6px;
   --animation-timing: 250ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
